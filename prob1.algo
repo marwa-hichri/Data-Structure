@@ -1,0 +1,31 @@
+ALGORITHM somme-elements
+VAR
+    set1:ARRAY_OF INTEGER[4];
+    set2: ARRAY_OF INTEGER[5];
+    i,j:INTEGER:
+    sum:INTEGER:=0;
+
+BEGIN
+set1:=[3,1,7,9];
+set2:=[2,4,1,9,3];
+    FOR i FROM 0 TO set1.length-1 step 1 DO
+    
+        IF ( not set1[i]in set2) THEN
+        sum:=sum+se1[i];
+          
+        END IF
+        
+    END_FOR
+ FOR j FROM 0 TO set2.length-1 step 1 DO
+    
+        IF ( not set2[j]in set1) THEN
+        sum:=sum+se2[j];
+          
+        END IF
+        
+    END_FOR
+
+
+
+    write("sum of all distinct elements:",sum);
+END

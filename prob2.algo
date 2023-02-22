@@ -1,0 +1,27 @@
+
+PROCEDURE dot-product
+VAR
+v1,v2:ARRAY_OF INTEGER;
+i,n:INTEGER;
+BEGIN
+PROCEDURE calcul (v1,v2)
+VAR
+    result=0;
+BEGIN
+FOR i FROM 0 TO v1.length-1 STEP 1  DO
+    result+=v1[i]*v2[j]
+END_FOR
+  IF (result=0) THEN
+    write('orthogonal')
+ELSE
+    write(' non orthogonal')
+   END_IF
+END
+
+FOR i FROM 1 TO n STEP 1  DO
+    read(v1);
+    read(v2);
+    calcul(v1,v2);
+END_FOR
+
+END
